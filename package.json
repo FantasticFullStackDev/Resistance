@@ -1,0 +1,47 @@
+{
+  "name": "resistance-web-game",
+  "private": true,
+  "scripts": {
+    "//dev": "next dev",
+    "dev": "node server.js NODE_OPTIONS='--inspect'",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "debug": "node --inspect-brk ./node_modules/next/dist/bin/next"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.7.3",
+    "@daily-co/daily-js": "^0.21.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.5",
+    "@mui/styles": "^5.2.3",
+    "@mui/system": "^5.2.8",
+    "@reduxjs/toolkit": "^1.7.1",
+    "@svgr/webpack": "^6.1.2",
+    "axios": "^0.24.0",
+    "clipboard-polyfill": "^3.0.3",
+    "debounce": "^1.2.1",
+    "framer-motion": "^4.1.17",
+    "next": "^11.0.2",
+    "next-auth": "^4.0.5",
+    "no-scroll": "^2.1.1",
+    "pusher": "^5.0.0",
+    "pusher-js": "^7.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-portal": "^4.2.1",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
+    "shallow-equal": "^1.2.1",
+    "use-deep-compare": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7"
+  }
+}

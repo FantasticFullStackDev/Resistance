@@ -1,0 +1,22 @@
+FACEBOOK_CLIENT_ID=274797921281822
+FACEBOOK_SECRET_KEY=c85250261ce7c02eae330ba4066b2679
+NEXTAUTH_URL=https://localhost:3000/api/auth/
+NEXTAUTH_SECRET=261ce66b26797c02c85250eae330ba40
+PUSHER_CLUSTER=us2
+PUSHER_KEY=c114c4c1eb8d4dee31b6
+PUSHER_AUTH_URL=https://web-resistance.irlgames.app/api/v1/pusher/auth
+GAME_API=https://web-universal.irlgames.app/api/v1
+USER_API=https://web-resistance.irlgames.app/api/v1
+
+# Domain excluding 'https://' and 'daily.co' e.g. 'somedomain'
+DAILY_DOMAIN=gamenight
+
+# Obtained from https://dashboard.daily.co/developers
+#DAILY_API_KEY=b42e0ae465efb922fdbc264ce8ce1dca13767548588ea6de8de26746448b15c9
+DAILY_API_KEY=b2f9a1c4480dfd8721579a341d6ae75c40e17a73df0d8efdb413a470fd42799b
+
+# Daily REST API endpoint
+DAILY_REST_DOMAIN=https://api.daily.co/v1
+
+# Run in demo mode (will create a demo room for you to try)
+DAILY_DEMO_MODE=true

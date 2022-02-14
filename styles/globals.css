@@ -1,0 +1,309 @@
+/* nunito-sans-regular - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/nunito-sans-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-track {
+  width: 2px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+
+
+/* Error Page */
+.error-main{
+  color:#000;
+  background:#fff;
+  font-family:-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif;
+  height:100vh;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center
+}
+.status-code{
+  display:inline-block;
+  border-right:1px solid rgba(0, 0, 0,.3);
+  margin: 0 20px 0 0;
+  padding:10px 23px 10px 0;
+  font-size:24px;
+  font-weight:500;
+  vertical-align:top
+}
+.status-message{
+  display:inline-block;
+  text-align:left;
+  line-height:49px;
+  height:49px;
+  vertical-align:middle
+}
+.message{
+  font-size:14px;
+  font-weight:normal;
+  line-height:inherit;
+  margin:0;padding:0
+}
+
+/* daily co */
+
+/* Browser Unsupported */
+.browser-unsupported {
+  position: absolute;
+  background: #ffffff;
+  font-family: Helvetica Neue, serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4a4a4a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Call */
+.call {
+  position: relative; /* To make it a "positioned" container so children layout works */
+  height: calc(100% - 60px); /* Space for the tray */
+}
+
+.large-tiles {
+  height: calc(100% - 133px);
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.small-tiles {
+  height: 133px; /* Video height + 10px padding either side */
+  display: flex;
+  align-items: center;
+}
+
+/* Call Message */
+.call-message {
+  width: auto;
+  padding: 20px 30px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.call-message.error {
+  color: #d81a1a;
+  background-color: #ffffff;
+}
+
+.call-message-header {
+  font-weight: bold;
+}
+
+/* Start Button */
+.start-button {
+  padding: 20px 30px;
+  position: absolute;
+  background: #ffffff;
+  font-family: Helvetica Neue, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4a4a4a;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Tile */
+.tile.small {
+  width: 200px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.tile.large {
+  position: relative;
+  margin: 2px;
+}
+
+.tile video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.tile .background {
+  background-color: #000000;
+  width: 100%;
+  padding-top: 56.25%; /* Hard-coded 16:9 aspect ratio */
+}
+
+.tile.local video {
+  transform: scale(-1, 1);
+}
+
+.tile.small video {
+  border-radius: 4px;
+}
+
+.tile.small .background {
+  border-radius: 4px;
+}
+
+.tile .loading {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/* Tray */
+.tile.small {
+  width: 200px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.tile.large {
+  position: relative;
+  margin: 2px;
+}
+
+.tile video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.tile .background {
+  background-color: #000000;
+  width: 100%;
+  padding-top: 56.25%; /* Hard-coded 16:9 aspect ratio */
+}
+
+.tile.local video {
+  transform: scale(-1, 1);
+}
+
+.tile.small video {
+  border-radius: 4px;
+}
+
+.tile.small .background {
+  border-radius: 4px;
+}
+
+.tile .loading {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+
+/* Tray Button */
+.tray-button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background-color: transparent;
+  margin: 0 5px;
+}
+
+.tray-button:disabled {
+  opacity: 33%;
+}
+
+.tray-button:enabled {
+  cursor: pointer;
+}
+
+/* Acts as the first button in a new "group" of buttons separated from those to the left of it */
+.tray-button.new-group {
+  margin-left: auto;
+}
+
+
+
