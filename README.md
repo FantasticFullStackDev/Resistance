@@ -1,0 +1,2 @@
+# Resistance
+Next, React, Redux
